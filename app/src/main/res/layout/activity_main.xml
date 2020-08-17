@@ -19,10 +19,12 @@
         android:layout_height="wrap_content"/>
 
     <ProgressBar
-        android:visibility="invisible"
+        android:visibility="visible"
+        android:indeterminate="false"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_circle"
         android:id="@+id/progressbar"
-        android:indeterminateTint="@color/colorPrimary"
-        android:indeterminate="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:layout_width="100dp"
