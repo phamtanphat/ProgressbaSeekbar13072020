@@ -4,14 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textview"
+        android:layout_marginTop="20dp"
+        android:textColor="#f20"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        tools:text="Time loading : 5s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressbar"
         android:indeterminateTint="@color/colorPrimary"
         android:indeterminate="true"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progressbar"
+        android:text="Progressing"
+        android:id="@+id/buttonProgress"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </RelativeLayout>
